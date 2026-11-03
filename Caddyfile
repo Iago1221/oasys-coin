@@ -1,0 +1,5 @@
+# Caddy pega o certificado HTTPS sozinho para o domínio em DOMINIO (arquivo .env).
+{$DOMINIO} {
+	encode gzip
+	reverse_proxy app:3000
+}
